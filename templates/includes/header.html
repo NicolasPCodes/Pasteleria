@@ -1,0 +1,19 @@
+{% load static %}
+<div class="top-bar header-hm">
+    <div class="columns">
+        <div class="logo ">
+            <a href="{% url 'pasteleria_app:inicio' %}">
+                <img src="{% static 'img/logo.png' %}" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <div class="columns small-8">
+        <ul class="menu">
+            <li><a href="{% url 'pasteleria_app:inicio' %}">Inicio</a></li>
+            <li><a href="{% url 'pasteleria_app:product_all' %}">Catalogo</a></li>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="{% url 'pasteleria_app:contacto' %}">Contacto</a></li>
+        </ul>
+    </div>
+</div>

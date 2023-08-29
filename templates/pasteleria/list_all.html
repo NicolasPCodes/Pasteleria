@@ -1,0 +1,31 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+
+{% block title %}Catalogo{% endblock title %}
+
+{% block content %}
+
+{% include 'includes/header.html' %}
+<div class="container-grid-productos" style="text-align: center;">
+    <div class="grid-x">
+        <h1 class="cell large-12" >Productos</h1>
+        <div class="cell large-12">
+            <div class="grid-x" style="padding-left: 70px; padding-right: 20px;">
+                
+                {% for producto in productos%}
+                    <div class="cell small-12 medium-6 large-3">
+                        <div class="card">
+                            <img src="{{producto.image.url}}">
+                            <div class="card-section">
+                                <p>${{producto.price}}</p>
+                                
+                                <a href="{% url 'pasteleria_app:producto_detalle' producto.codigo %}" class="">{{producto.name}}</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

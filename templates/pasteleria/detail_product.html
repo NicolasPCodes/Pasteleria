@@ -1,0 +1,32 @@
+{% extends 'includes/base.html' %}
+{% load static %}
+
+{% block title %}{{ object.name }}{% endblock title %}
+
+{% block content %}
+
+    {% include 'includes/header.html' %}
+
+    <div class="detalle-producto">
+        <div class="grid-x">
+            <div class="cell medium-1" style="margin-bottom: 20px;">
+                <a href="{% url 'pasteleria_app:product_all' %}">Volver a catalogo</a>
+            </div>
+            <div class="cell medium-11">
+                <!-- <h1>{{producto.name}}</h1> -->
+            </div>
+            <div class="cell medium-12 large-6">
+                <div class="detalle-producto-photo">
+                    <img src="{{producto.image.url}}">
+                </div>
+            </div>
+            <div class="cell medium-12 large-6">
+                <div class="detalle-producto-box">
+                    <h2>{{producto.name}}</h2>
+                    <h2>${{producto.price}}</h2>
+                    {{producto.description|safe}}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

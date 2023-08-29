@@ -1,0 +1,99 @@
+.top-bar{
+    background-color: #5D002C;
+}
+.nav{
+    background-color: #5D002C;
+}
+.menu{
+    background: #5D002C;
+    align-items: center;
+}
+.menu li{
+    background: #5D002C;
+}
+
+.menu li:hover{
+    background: rgb(150, 149, 149);
+}
+.menu a{
+    color: white;
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño máximo del logo */
+    height: auto;
+    margin: -10;
+}
+
+.title-marca {
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.container-imgs-muestras{
+    width: 100%;
+    max-height: 550px;
+    background-color: #005d22;
+}
+
+.orbit-image{
+    max-height: 550px;
+}
+
+.container-productos{
+    margin: 10px;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.container-cards{
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 70px;
+    margin-left: 20px;
+}
+.container-cards-products{
+    margin-left: 20px;
+}
+
+.container-cards-list{
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    /* padding: 70px; */
+    margin-left: 30px;
+}
+
+.card{
+    width: 300px;
+    margin: 25px;
+}
+
+.card img{
+    max-height: 250px;
+    max-width: 300px;
+}
+
+.container-grid-productos{
+    width: 100%;
+    text-align: center;
+}
+
+.detalle-producto{
+    margin-top: 80px; 
+    margin-bottom: 100px; 
+    text-align: center; 
+}
+
+.detalle-producto-photo img{
+    max-height: 500px;
+    width: 500px;
+}
+
+.detalle-producto-box {
+    max-height: 500px;
+    text-align: left;
+}
